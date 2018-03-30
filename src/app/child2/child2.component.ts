@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child2.component.css']
 })
 export class Child2Component implements OnInit {
-  message: string = "Message from Child2!"
+  message: string = "Message from Child2!";
   constructor() { }
 
   ngOnInit() {

@@ -14,16 +14,16 @@ export class ParentComponent implements OnInit, AfterViewInit {
   ngOnInit() {
   }
   
-  message:string;
-
-  ngAfterViewInit() {
-    this.message = this.child2.message;
-  }
+  message2:string;
 
   message3:string;
 
   receiveMessage($event) {
     this.message3 = $event;
+  }
+  
+  ngAfterViewInit() {
+    this.message2 = this.child2.message;
   }
 
 }
