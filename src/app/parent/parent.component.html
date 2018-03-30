@@ -1,0 +1,13 @@
+<div>
+  <h2>
+    This is Parent!
+  </h2>  
+  <app-child1 [childMessage]="parentMessage"></app-child1>
+  <p>Parent: {{message2}}</p>
+  <p>
+    Parent: {{message3}}
+    <app-child3 (messageEvent)="receiveMessage($event)"></app-child3>
+  </p>
+  <app-child4></app-child4>
+</div>
+
